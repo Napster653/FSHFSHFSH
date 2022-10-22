@@ -8,7 +8,7 @@ function text_to_fsh()
     fsh = '';
     [...str].forEach(i =>
     {
-        abc = i.charCodeAt(0).toString(4);
+        abc = i.charCodeAt(0).toString(4).padStart(4, '0');
         [...abc].forEach(j =>
         {
             fsh += text_to_fsh_array[j];
